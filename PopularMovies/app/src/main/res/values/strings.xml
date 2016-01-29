@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="api_key"></string>
+    <string name="movies_base_url">http://api.themoviedb.org/3/discover/movie?</string>
+    <string name="image_base_url">http://image.tmdb.org/t/p/w185/</string>
+    <string name="image_url_large">http://image.tmdb.org/t/p/w185/</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_popular_movies">Sort by : Most Popular</string>
+    <string name="action_highest_rated">Sort by : Highest rated</string>
+    <string name="release_date">Release Date : </string>
+    <string name="ratings">Ratings : </string>
+    <string name="synopsis">Synopsis : </string>
+    <string name="movie_trailers">Movie trailers</string>
+    <string name="show_reviews">Show Reviews</string>
+    <string name="action_fav_movies">Favorites</string>
+    <string name="action_share">share</string>
+</resources>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ielite.app.popularmovies.MovieListActivity">
+    <item
+        android:id="@+id/action_popular_movies"
+        android:orderInCategory="100"
+        android:title="@string/action_popular_movies"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rated_movies"
+        android:orderInCategory="100"
+        android:title="@string/action_highest_rated"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_fav_movies"
+        android:title="@string/action_fav_movies"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

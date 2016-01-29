@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="ielite.app.popularmovies.MovieListActivity">
+
+    <!--
+    This layout is a two-pane layout for the Movies
+    master/detail flow.
+    
+    -->
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/movie_list"
+        android:name="ielite.app.popularmovies.MovieListFragment"
+        android:layout_width="@dimen/two_pane_width"
+        android:layout_height="match_parent"
+        app:layoutManager="GridLayoutManager"
+        tools:context="ielite.app.popularmovies.MovieListActivity"
+        tools:listitem="@layout/movie_list_row" />
+
+    <FrameLayout
+        android:id="@+id/movie_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_star_white_48dp"
+            app:layout_anchor="@+id/movie_detail_container"
+            app:layout_anchorGravity="bottom|right|end" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
