@@ -1,0 +1,1 @@
+PopularMovies app helps users discover popular and recent movies. The App allows users to 'favorite' movies and is optimized to perform on Handheld Devices (Phones and tablets).
